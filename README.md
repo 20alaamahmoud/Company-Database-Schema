@@ -1,3 +1,30 @@
 # Company-Database-Schema
 - Create Database Schema
 - Project Description in Project.pdf
+- Display the full data about all the dependence associated with the name of the employee they depend on him/her.
+- Retrieve the names of all employees and the names of the projects they are working on, sorted by the project name.
+- Select max two salaries in employee table.
+- Select employee name and his salary but if there is no salary display instructor value ‘3000’. “use one of coalesce Function”
+- Select employee first name and the data of his supervisor
+- Display the data of the second highest-salary employee without duplicate
+- Display any Project with a Name starting with the letter B
+- Create a rule on Salary column in employee to ensure that it is less than 6000
+- Add Constrain address column can only contain values that are either 'alex', 'mansoura', or 'cairo'.” .
+- Create a scalar function that takes Employee SSN and returns a message to user
+      -If first name and Last name are null then display 'First name & last name are null'
+      -If First name is null then display 'first name is null'
+      -If Last name is null then display 'last name is null'
+      -Else display 'First name & last name are not null'.
+- Create multi-statements table-valued function that takes a string
+      -If string='first name' returns employees first name
+      -If string='last name' returns employees last name
+      -If string='full name' returns Full Name from employees table
+      -Note: Use “ISNULL” function
+- Create a view that will display the project name and the number of employees work on it.
+- Create view that will display the emp#(ssn) and emp lastname who works on dept# is ‘d2’
+- Display the employee lastname that contains letter “J”
+- Use the previous view created in Q#1
+- Create a stored procedure that will be used in case there is an old employee has left the project and a new one become instead of him. The procedure should take 3 parameters (old Emp. number, new Emp. number and the project number) and it will be used to update works on table. And return “Employee updated successfully”.
+- Create table Employee Audit. (name string, date, string note).
+- Create a trigger on Employee table instead of delete to add Row in Employee Audit table (Server User Name, Date, Note) where note will be "try to delete Row with Key of row = [Key Value]"
+
